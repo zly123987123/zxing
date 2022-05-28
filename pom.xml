@@ -69,7 +69,7 @@
     <proguard.version>7.1.1</proguard.version>
     <proguard.plugin.version>2.4.0</proguard.plugin.version>
     <!-- This can't reference project.version as some subprojects version differently -->
-    <zxing.version>3.4.2-SNAPSHOT</zxing.version>
+    <zxing.version>3.5.0</zxing.version>
     <android.platform>22</android.platform>
   </properties>
 
@@ -120,9 +120,9 @@
               <id>enforce</id>
               <configuration>
                 <rules>
-                  <requireModuleConvergence />
-                  <requireUpperBoundDeps />
-                  <dependencyConvergence />
+                  <requireModuleConvergence/>
+                  <requireUpperBoundDeps/>
+                  <dependencyConvergence/>
                   <requireMavenVersion>
                     <version>3.3.9</version>
                   </requireMavenVersion>
@@ -294,7 +294,7 @@
             </execution>
           </executions>
           <configuration>
-            <keyname>Sean Owen (ZXing) &lt;srowen@gmail.com&gt;</keyname>
+            <keyname>Sean Owen (ZXing) &lt;srowen@gmail.com></keyname>
           </configuration>
         </plugin>
         <plugin>
@@ -789,7 +789,7 @@
       <id>travis</id>
       <properties>
         <!-- dummy to make @{argLine} evaluate when not set by jacoco -->
-        <argLine />
+        <argLine/>
       </properties>
       <build>
         <plugins>
